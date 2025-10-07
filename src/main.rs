@@ -54,4 +54,7 @@ fn main() {
 
     // Ownership, references, and borrowing
     subfolder::orb::orb_fn();
+
+    // Control flow
+    subfolder::control_flow::control_fn(3, 5);
 }
