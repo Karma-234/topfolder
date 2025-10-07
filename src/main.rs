@@ -23,7 +23,15 @@ fn main() {
     // Arrays
     let first_array: [i32; 5] = [1, 2, 3, 4, 5];
 
-    // We use "{:?}" to print the array in a readable format else we get a n error message
+    // We use "{:?}" to print the array in a readable format else we get an error message
 
     println!("First array is {:?}", first_array);
+
+    // Difference between sring and string slice in Rust
+
+    let my_string: String = String::from("Hello"); // The "Hello" is a string slice and not a string.
+    println!("my_string is {}", my_string);
+
+    let my_string_slice: &str = "Hello"; // The "Hello" is a string slice and not a string.
+    println!("my_string_slice is {}", my_string_slice);
 }
