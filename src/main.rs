@@ -33,8 +33,11 @@ fn main() {
 
     println!("First array is {:?}", first_array);
 
-    // Difference between sring and string slice in Rust
+    // * Differences between sring and string slice in Rust. *
 
+    // String` is a growable, mutable string type.` i.e you can add, reduce the characters in it.
+    // String or declared variables are usually stored on the heap (they are ususally growable) allowing efficient runtime memory management.
+    // Varriables decalerd on the stack (they are usually not growable) are accessed faster which can lead to more efficient memory usage.
     let my_string: String = String::from("Hello"); // The "Hello" is a string slice and not a string.
     println!("my_string is {}", my_string);
 
