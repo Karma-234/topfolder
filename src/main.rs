@@ -57,4 +57,10 @@ fn main() {
 
     // Control flow
     subfolder::control_flow::control_fn(3, 5);
+
+    // Structs
+    subfolder::structs::my_struct();
+
+    // Modules
+    println!("Modules are working!");
 }

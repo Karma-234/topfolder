@@ -20,7 +20,7 @@ pub fn my_struct() {
         role: String::from("admin"),
         can_delete_posts: true,
     };
-
+    my_super_user.print_info();
     // You can create new instaces of a strct if they share the same fields.
     let mut normal_user = SuperUser {
         can_delete_posts: false,
@@ -30,8 +30,5 @@ pub fn my_struct() {
 
     // Structs should be mutable so you can easily reassign values.\\
     normal_user.username = String::from("user");
-    normal_user.print_info();
-
-    // Structs can also contain functions.
     normal_user.print_info();
 }
