@@ -3,14 +3,20 @@ mod subfolder;
 
 fn main() {
     println!("Hello, world!");
+
+    // Adding mut lets you know that this is menat to be mutable
     let mut x = 5;
     println!("x is : {}", x);
     x = 3;
     println!("x is : {}", x);
+
+    // Constants must be defined, capitalized and immutable.
     const Y: i32 = 3;
     println!("y is {}", Y);
     const FLOATING_POINT: f32 = 10.98;
     println!("FLOATING_POINT is {}", FLOATING_POINT);
+
+    // Tuples can contain different data types
     let tup: (bool, char, i32) = (true, 'a', 4);
     println!("bool is {}, char is {}, int is {}", tup.0, tup.1, tup.2);
 
