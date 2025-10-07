@@ -39,7 +39,7 @@ fn expression_fn() -> i32 {
 }
 
 fn expression_fn2() -> i32 {
-    // This will return the last line of the code body by ommitting the semicolon
+    // This will return the last line of the code body with the semicolon and return statement.
     let a = 1;
     let b = 2;
     return a + b;
