@@ -51,4 +51,7 @@ fn main() {
 
     // Function types
     subfolder::functions::function_types();
+
+    // Ownership, references, and borrowing
+    subfolder::orb::orb_fn();
 }
