@@ -4,7 +4,7 @@ mod subfolder;
 fn main() {
     println!("Hello, world!");
 
-    // Adding mut lets you know that this is menat to be mutable
+    // Varibales are orignally immutable in rust. Adding mut lets you know that this is meant to be mutable.
     let mut x = 5;
     println!("x is : {}", x);
     x = 3;
@@ -38,9 +38,17 @@ fn main() {
     // String` is a growable, mutable string type.` i.e you can add, reduce the characters in it.
     // String or declared variables are usually stored on the heap (they are ususally growable) allowing efficient runtime memory management.
     // Varriables decalerd on the stack (they are usually not growable) are accessed faster which can lead to more efficient memory usage.
-    let my_string: String = String::from("Hello"); // The "Hello" is a string slice and not a string.
+    let mut my_string: String = String::from("Hello"); // The "Hello" is a string slice and not a string.
     println!("my_string is {}", my_string);
+    my_string.push_str("string");
+    println!("my_string is now {}", my_string);
 
-    let my_string_slice: &str = "Hello"; // The "Hello" is a string slice and not a string.
+    // mut should also be throwing a warning here because the slice is immutable.
+    let mut my_string_slice: &str = "Hello"; // The "Hello" is a string slice and not a string.
     println!("my_string_slice is {}", my_string_slice);
+    my_string.push_str("new slice");
+    println!("my_string_slice is is now {}", my_string_slice); // This will print "Hello". The string slice is not mutable.
+
+    // Function types
+    subfolder::functions::function_types();
 }
