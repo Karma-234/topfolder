@@ -22,11 +22,6 @@ fn loop_fn(mut a: u32) {
     // You cannot iterate over a string in rust instead you covert to a slice of char with or without indices.
     let mystring = "123456".chars();
     for item in mystring {
-        println!("Char: {:?}", item);
-    }
-
-    let mut my_mut_string = "123456".chars();
-    for item in my_mut_string {
-        println!("Mut Char: {:?}", item);
+        println!("Char: {:?}\\n", item);
     }
 }
