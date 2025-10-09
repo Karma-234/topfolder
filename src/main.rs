@@ -61,6 +61,9 @@ fn main() {
     // Structs
     subfolder::structs::my_struct();
 
+    // Error handling
+    subfolder::error_handling::error_handling();
+
     // Modules
     println!("Modules are working!");
 }
